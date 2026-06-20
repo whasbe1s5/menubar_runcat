@@ -1,0 +1,19 @@
+{
+  "" : {
+    "diagnostics" : "/Users/whasbe1s/Documents/Projects/menubar_runcat/build/Menubar RunCat.build/Debug/Menubar RunCatTests.build/Objects-normal/arm64/Menubar RunCatTests-primary.dia",
+    "emit-module-dependencies" : "/Users/whasbe1s/Documents/Projects/menubar_runcat/build/Menubar RunCat.build/Debug/Menubar RunCatTests.build/Objects-normal/arm64/Menubar RunCatTests-primary-emit-module.d",
+    "emit-module-diagnostics" : "/Users/whasbe1s/Documents/Projects/menubar_runcat/build/Menubar RunCat.build/Debug/Menubar RunCatTests.build/Objects-normal/arm64/Menubar RunCatTests-primary-emit-module.dia",
+    "pch" : "/Users/whasbe1s/Documents/Projects/menubar_runcat/build/Menubar RunCat.build/Debug/Menubar RunCatTests.build/Objects-normal/arm64/Menubar RunCatTests-primary-Bridging-header.pch",
+    "swift-dependencies" : "/Users/whasbe1s/Documents/Projects/menubar_runcat/build/Menubar RunCat.build/Debug/Menubar RunCatTests.build/Objects-normal/arm64/Menubar RunCatTests-primary.swiftdeps"
+  },
+  "/Users/whasbe1s/Documents/Projects/menubar_runcat/Menubar RunCatTests/MenubarRunCatTests.swift" : {
+    "const-values" : "/Users/whasbe1s/Documents/Projects/menubar_runcat/build/Menubar RunCat.build/Debug/Menubar RunCatTests.build/Objects-normal/arm64/MenubarRunCatTests.swiftconstvalues",
+    "dependencies" : "/Users/whasbe1s/Documents/Projects/menubar_runcat/build/Menubar RunCat.build/Debug/Menubar RunCatTests.build/Objects-normal/arm64/MenubarRunCatTests.d",
+    "diagnostics" : "/Users/whasbe1s/Documents/Projects/menubar_runcat/build/Menubar RunCat.build/Debug/Menubar RunCatTests.build/Objects-normal/arm64/MenubarRunCatTests.dia",
+    "index-unit-output-path" : "/Menubar RunCat.build/Debug/Menubar RunCatTests.build/Objects-normal/arm64/MenubarRunCatTests.o",
+    "llvm-bc" : "/Users/whasbe1s/Documents/Projects/menubar_runcat/build/Menubar RunCat.build/Debug/Menubar RunCatTests.build/Objects-normal/arm64/MenubarRunCatTests.bc",
+    "object" : "/Users/whasbe1s/Documents/Projects/menubar_runcat/build/Menubar RunCat.build/Debug/Menubar RunCatTests.build/Objects-normal/arm64/MenubarRunCatTests.o",
+    "swift-dependencies" : "/Users/whasbe1s/Documents/Projects/menubar_runcat/build/Menubar RunCat.build/Debug/Menubar RunCatTests.build/Objects-normal/arm64/MenubarRunCatTests.swiftdeps",
+    "swiftmodule" : "/Users/whasbe1s/Documents/Projects/menubar_runcat/build/Menubar RunCat.build/Debug/Menubar RunCatTests.build/Objects-normal/arm64/MenubarRunCatTests~partial.swiftmodule"
+  }
+}

@@ -3,146 +3,259 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 77;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1C0ADF322A175F0B00867AB3 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C0ADF312A175F0B00867AB3 /* main.swift */; };
-		1CEF10A022F922DB00DAD355 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CEF109F22F922DB00DAD355 /* AppDelegate.swift */; };
-		1CEF10A422F922DD00DAD355 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1CEF10A322F922DD00DAD355 /* Assets.xcassets */; };
-		1CEF10B022F9342600DAD355 /* CPU.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CEF10AF22F9342600DAD355 /* CPU.swift */; };
+		04C7DA3430738E94A3BF9165 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 218CAD706DBE88CCD6180365 /* AppDelegate.swift */; };
+		0D1BB7BBE92FC09CCB86E1D3 /* SystemMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77803515BAEB5EA0B96B749C /* SystemMonitor.swift */; };
+		22D9B83ABEF87F0F9FA06901 /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6E6F8A0A633EC9FC5F027E /* DashboardView.swift */; };
+		3AB26E7B4E53F9CC41F987C4 /* CPU.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4787CF8877B356A14AED0B01 /* CPU.swift */; };
+		440A5D3E86A37C45778132EA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C50733FF38ABEE7C2EB67520 /* Assets.xcassets */; };
+		5A76804BE955BA10D2F99C46 /* RunnerEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5FC3423EA84D816A35B22CA /* RunnerEngine.swift */; };
+		F1E2D3C4B5A6978877665544 /* SystemCleaner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E8F7D6C5B4A392817160504 /* SystemCleaner.swift */; };
+		A1B2C3D4E5F6A7B8C9D0E1F2 /* SettingsCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = AABBCCDDEEFF001122334455 /* SettingsCard.swift */; };
+		9E096544BE71B2AFF2443912 /* AppEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B2B67A3F9F74AA4E0FA765 /* AppEntry.swift */; };
+		D973ACEC61342B7034C7D2DC /* MenubarRunCatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5043046EC226D9D00DE7CBC /* MenubarRunCatTests.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		4B18593CD98F61692A7CC983 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 89B733D161C1B14B900D93E8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 46BD3FBDE71954C7923417D4;
+			remoteInfo = "Menubar RunCat";
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
-		1C0ADF312A175F0B00867AB3 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
-		1CEF109C22F922DB00DAD355 /* Menubar RunCat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Menubar RunCat.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		1CEF109F22F922DB00DAD355 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		1CEF10A322F922DD00DAD355 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		1CEF10A822F922DD00DAD355 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1CEF10A922F922DD00DAD355 /* Menubar_RunCat.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Menubar_RunCat.entitlements; sourceTree = "<group>"; };
-		1CEF10AF22F9342600DAD355 /* CPU.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CPU.swift; sourceTree = "<group>"; };
+		218CAD706DBE88CCD6180365 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2B189AC0FD39877CB985B4F4 /* Menubar RunCatTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Menubar RunCatTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		44B2B67A3F9F74AA4E0FA765 /* AppEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppEntry.swift; sourceTree = "<group>"; };
+		4787CF8877B356A14AED0B01 /* CPU.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CPU.swift; sourceTree = "<group>"; };
+		55259A8FBF0182E45908C188 /* Menubar_RunCat.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Menubar_RunCat.entitlements; sourceTree = "<group>"; };
+		77803515BAEB5EA0B96B749C /* SystemMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemMonitor.swift; sourceTree = "<group>"; };
+		BB65E8E134ED836363618A39 /* Menubar RunCat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Menubar RunCat.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF6E6F8A0A633EC9FC5F027E /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
+		C50733FF38ABEE7C2EB67520 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D032BFE4B5B2B19BF075E199 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		D5043046EC226D9D00DE7CBC /* MenubarRunCatTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenubarRunCatTests.swift; sourceTree = "<group>"; };
+		D5FC3423EA84D816A35B22CA /* RunnerEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunnerEngine.swift; sourceTree = "<group>"; };
+		9E8F7D6C5B4A392817160504 /* SystemCleaner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemCleaner.swift; sourceTree = "<group>"; };
+		AABBCCDDEEFF001122334455 /* SettingsCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsCard.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
-/* Begin PBXFrameworksBuildPhase section */
-		1CEF109922F922DB00DAD355 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXFrameworksBuildPhase section */
-
 /* Begin PBXGroup section */
-		1CEF109322F922DB00DAD355 = {
+		424D7C08AD60CF8719D6F28A /* Menubar RunCat */ = {
 			isa = PBXGroup;
 			children = (
-				1CEF109E22F922DB00DAD355 /* Menubar RunCat */,
-				1CEF109D22F922DB00DAD355 /* Products */,
-			);
-			sourceTree = "<group>";
-		};
-		1CEF109D22F922DB00DAD355 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				1CEF109C22F922DB00DAD355 /* Menubar RunCat.app */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		1CEF109E22F922DB00DAD355 /* Menubar RunCat */ = {
-			isa = PBXGroup;
-			children = (
-				1C0ADF312A175F0B00867AB3 /* main.swift */,
-				1CEF109F22F922DB00DAD355 /* AppDelegate.swift */,
-				1CEF10AF22F9342600DAD355 /* CPU.swift */,
-				1CEF10A322F922DD00DAD355 /* Assets.xcassets */,
-				1CEF10A822F922DD00DAD355 /* Info.plist */,
-				1CEF10A922F922DD00DAD355 /* Menubar_RunCat.entitlements */,
+				218CAD706DBE88CCD6180365 /* AppDelegate.swift */,
+				44B2B67A3F9F74AA4E0FA765 /* AppEntry.swift */,
+				C50733FF38ABEE7C2EB67520 /* Assets.xcassets */,
+				4787CF8877B356A14AED0B01 /* CPU.swift */,
+				BF6E6F8A0A633EC9FC5F027E /* DashboardView.swift */,
+				D032BFE4B5B2B19BF075E199 /* Info.plist */,
+				55259A8FBF0182E45908C188 /* Menubar_RunCat.entitlements */,
+				D5FC3423EA84D816A35B22CA /* RunnerEngine.swift */,
+				77803515BAEB5EA0B96B749C /* SystemMonitor.swift */,
+				9E8F7D6C5B4A392817160504 /* SystemCleaner.swift */,
+				AABBCCDDEEFF001122334455 /* SettingsCard.swift */,
 			);
 			path = "Menubar RunCat";
+			sourceTree = "<group>";
+		};
+		754FDE36365CFD42FD527759 /* Menubar RunCatTests */ = {
+			isa = PBXGroup;
+			children = (
+				D5043046EC226D9D00DE7CBC /* MenubarRunCatTests.swift */,
+			);
+			path = "Menubar RunCatTests";
+			sourceTree = "<group>";
+		};
+		C0E52F3125E1099AE08A6890 = {
+			isa = PBXGroup;
+			children = (
+				424D7C08AD60CF8719D6F28A /* Menubar RunCat */,
+				754FDE36365CFD42FD527759 /* Menubar RunCatTests */,
+				FC41EEB56635C855DEF821CA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FC41EEB56635C855DEF821CA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BB65E8E134ED836363618A39 /* Menubar RunCat.app */,
+				2B189AC0FD39877CB985B4F4 /* Menubar RunCatTests.xctest */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		1CEF109B22F922DB00DAD355 /* Menubar RunCat */ = {
+		46BD3FBDE71954C7923417D4 /* Menubar RunCat */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1CEF10AC22F922DD00DAD355 /* Build configuration list for PBXNativeTarget "Menubar RunCat" */;
+			buildConfigurationList = 4AE89A75ACB3F444B9A29657 /* Build configuration list for PBXNativeTarget "Menubar RunCat" */;
 			buildPhases = (
-				1CEF109822F922DB00DAD355 /* Sources */,
-				1CEF109922F922DB00DAD355 /* Frameworks */,
-				1CEF109A22F922DB00DAD355 /* Resources */,
+				767D96A8AE67B8854B4DACE9 /* Sources */,
+				8AE7AFA8570EB23E24F1D38C /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = "Menubar RunCat";
+			packageProductDependencies = (
+			);
 			productName = "Menubar RunCat";
-			productReference = 1CEF109C22F922DB00DAD355 /* Menubar RunCat.app */;
+			productReference = BB65E8E134ED836363618A39 /* Menubar RunCat.app */;
 			productType = "com.apple.product-type.application";
+		};
+		483B630A71B6927327B969F8 /* Menubar RunCatTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E169AFDC6DB806186FD4BF62 /* Build configuration list for PBXNativeTarget "Menubar RunCatTests" */;
+			buildPhases = (
+				D21AC617D8EC78C8BB99E3CA /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4A8A43B688B50967F73A2EFD /* PBXTargetDependency */,
+			);
+			name = "Menubar RunCatTests";
+			packageProductDependencies = (
+			);
+			productName = "Menubar RunCatTests";
+			productReference = 2B189AC0FD39877CB985B4F4 /* Menubar RunCatTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		1CEF109422F922DB00DAD355 /* Project object */ = {
+		89B733D161C1B14B900D93E8 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = YES;
-				LastSwiftUpdateCheck = 1030;
 				LastUpgradeCheck = 1430;
-				ORGANIZATIONNAME = "Takuto Nakamura";
 				TargetAttributes = {
-					1CEF109B22F922DB00DAD355 = {
-						CreatedOnToolsVersion = 10.3;
+					46BD3FBDE71954C7923417D4 = {
+						DevelopmentTeam = "";
+						ProvisioningStyle = Manual;
+					};
+					483B630A71B6927327B969F8 = {
+						DevelopmentTeam = "";
 					};
 				};
 			};
-			buildConfigurationList = 1CEF109722F922DB00DAD355 /* Build configuration list for PBXProject "Menubar RunCat" */;
-			compatibilityVersion = "Xcode 14.0";
+			buildConfigurationList = 08141BA8274BB859EB08EC88 /* Build configuration list for PBXProject "Menubar RunCat" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
-				en,
 				Base,
+				en,
 			);
-			mainGroup = 1CEF109322F922DB00DAD355;
-			productRefGroup = 1CEF109D22F922DB00DAD355 /* Products */;
+			mainGroup = C0E52F3125E1099AE08A6890;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = FC41EEB56635C855DEF821CA /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				1CEF109B22F922DB00DAD355 /* Menubar RunCat */,
+				46BD3FBDE71954C7923417D4 /* Menubar RunCat */,
+				483B630A71B6927327B969F8 /* Menubar RunCatTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		1CEF109A22F922DB00DAD355 /* Resources */ = {
+		8AE7AFA8570EB23E24F1D38C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1CEF10A422F922DD00DAD355 /* Assets.xcassets in Resources */,
+				440A5D3E86A37C45778132EA /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		1CEF109822F922DB00DAD355 /* Sources */ = {
+		767D96A8AE67B8854B4DACE9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1CEF10B022F9342600DAD355 /* CPU.swift in Sources */,
-				1CEF10A022F922DB00DAD355 /* AppDelegate.swift in Sources */,
-				1C0ADF322A175F0B00867AB3 /* main.swift in Sources */,
+				04C7DA3430738E94A3BF9165 /* AppDelegate.swift in Sources */,
+				F1E2D3C4B5A6978877665544 /* SystemCleaner.swift in Sources */,
+				9E096544BE71B2AFF2443912 /* AppEntry.swift in Sources */,
+				3AB26E7B4E53F9CC41F987C4 /* CPU.swift in Sources */,
+				22D9B83ABEF87F0F9FA06901 /* DashboardView.swift in Sources */,
+				5A76804BE955BA10D2F99C46 /* RunnerEngine.swift in Sources */,
+				A1B2C3D4E5F6A7B8C9D0E1F2 /* SettingsCard.swift in Sources */,
+				0D1BB7BBE92FC09CCB86E1D3 /* SystemMonitor.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D21AC617D8EC78C8BB99E3CA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D973ACEC61342B7034C7D2DC /* MenubarRunCatTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		4A8A43B688B50967F73A2EFD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 46BD3FBDE71954C7923417D4 /* Menubar RunCat */;
+			targetProxy = 4B18593CD98F61692A7CC983 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
-		1CEF10AA22F922DD00DAD355 /* Debug */ = {
+		2AEBB3ECDE13F3DE7F2ED149 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Menubar RunCat/Menubar_RunCat.entitlements";
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Manual;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Menubar RunCat/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kyome.Menubar-RunCat";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		52512ACBBE4886ACBE840EDA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kyome.MenubarRunCatTests;
+				SDKROOT = macosx;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Menubar RunCat.app/Contents/MacOS/Menubar RunCat";
+			};
+			name = Release;
+		};
+		87705949FCFD9329C8DC4DAA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -175,9 +288,7 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "Mac Developer";
 				COPY_PHASE_STRIP = NO;
-				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -186,8 +297,8 @@
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
 					"$(inherited)",
+					"DEBUG=1",
 				);
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
@@ -195,17 +306,59 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
-		1CEF10AB22F922DD00DAD355 /* Release */ = {
+		8B5D947C2A97319398F9937D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kyome.MenubarRunCatTests;
+				SDKROOT = macosx;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Menubar RunCat.app/Contents/MacOS/Menubar RunCat";
+			};
+			name = Debug;
+		};
+		A86A3020E54662C0E85BDDD3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Menubar RunCat/Menubar_RunCat.entitlements";
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Manual;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Menubar RunCat/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kyome.Menubar-RunCat";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		F0B651EBA9A3DF98214618CF /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -238,9 +391,7 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "Mac Developer";
 				COPY_PHASE_STRIP = NO;
-				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -252,69 +403,12 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
-			};
-			name = Release;
-		};
-		1CEF10AD22F922DD00DAD355 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = "Menubar RunCat/Menubar_RunCat.entitlements";
-				CODE_SIGN_IDENTITY = "-";
-				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1.0.0;
-				DEAD_CODE_STRIPPING = YES;
-				DEVELOPMENT_TEAM = VJ5N2X84K8;
-				ENABLE_HARDENED_RUNTIME = YES;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Menubar RunCat/Info.plist";
-				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
-				INFOPLIST_KEY_LSUIElement = YES;
-				INFOPLIST_KEY_NSHumanReadableCopyright = "© 2019-2023 Takuto Nakamura";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.kyome.runcat.menubar;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-			};
-			name = Debug;
-		};
-		1CEF10AE22F922DD00DAD355 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = "Menubar RunCat/Menubar_RunCat.entitlements";
-				CODE_SIGN_IDENTITY = "-";
-				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1.0.0;
-				DEAD_CODE_STRIPPING = YES;
-				DEVELOPMENT_TEAM = VJ5N2X84K8;
-				ENABLE_HARDENED_RUNTIME = YES;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Menubar RunCat/Info.plist";
-				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
-				INFOPLIST_KEY_LSUIElement = YES;
-				INFOPLIST_KEY_NSHumanReadableCopyright = "© 2019-2023 Takuto Nakamura";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.kyome.runcat.menubar;
-				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
@@ -322,25 +416,34 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1CEF109722F922DB00DAD355 /* Build configuration list for PBXProject "Menubar RunCat" */ = {
+		08141BA8274BB859EB08EC88 /* Build configuration list for PBXProject "Menubar RunCat" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				1CEF10AA22F922DD00DAD355 /* Debug */,
-				1CEF10AB22F922DD00DAD355 /* Release */,
+				87705949FCFD9329C8DC4DAA /* Debug */,
+				F0B651EBA9A3DF98214618CF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
-		1CEF10AC22F922DD00DAD355 /* Build configuration list for PBXNativeTarget "Menubar RunCat" */ = {
+		4AE89A75ACB3F444B9A29657 /* Build configuration list for PBXNativeTarget "Menubar RunCat" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				1CEF10AD22F922DD00DAD355 /* Debug */,
-				1CEF10AE22F922DD00DAD355 /* Release */,
+				2AEBB3ECDE13F3DE7F2ED149 /* Debug */,
+				A86A3020E54662C0E85BDDD3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
+		};
+		E169AFDC6DB806186FD4BF62 /* Build configuration list for PBXNativeTarget "Menubar RunCatTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8B5D947C2A97319398F9937D /* Debug */,
+				52512ACBBE4886ACBE840EDA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 1CEF109422F922DB00DAD355 /* Project object */;
+	rootObject = 89B733D161C1B14B900D93E8 /* Project object */;
 }

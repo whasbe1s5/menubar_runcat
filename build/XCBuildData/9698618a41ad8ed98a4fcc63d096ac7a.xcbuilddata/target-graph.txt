@@ -1,0 +1,4 @@
+Target dependency graph (2 targets)
+Target 'Menubar RunCatTests' in project 'Menubar RunCat'
+➜ Explicit dependency on target 'Menubar RunCat' in project 'Menubar RunCat'
+Target 'Menubar RunCat' in project 'Menubar RunCat' (no dependencies)

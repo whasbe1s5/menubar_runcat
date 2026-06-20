@@ -7,84 +7,128 @@
 */
 
 import Cocoa
+import SwiftUI
+import Combine
 
+@MainActor
 final class AppDelegate: NSObject, NSApplicationDelegate {
     private lazy var statusItem: NSStatusItem = {
         return NSStatusBar.system.statusItem(withLength: NSStatusItem.variableLength)
     }()
-    private let menu = NSMenu()
-    private lazy var frames: [NSImage] = {
-        return (0 ..< 5).map { n in
-            let image = NSImage(named: "cat_page\(n)")!
-            image.size = NSSize(width: 28, height: 18)
-            return image
-        }
-    }()
-    private var index: Int = 0
-    private var interval: Double = 1.0
-    private let cpu = CPU()
-    private var usage: CPUInfo = CPU.default
-    private var cpuTimer: Timer? = nil
-    private var runnerTimer: Timer? = nil
-    private var isShowUsage: Bool = false
-
+    
+    private let popover = NSPopover()
+    private var monitor: SystemMonitor!
+    private var engine: RunnerEngine!
+    private var cancellables = Set<AnyCancellable>()
+    private var cleaner: SystemCleaner!
+    private var showPercentage = false
+    
     func applicationDidFinishLaunching(_ notification: Notification) {
+        // Initialize Monitor & Engine
+        monitor = SystemMonitor()
+        cleaner = SystemCleaner()
+        engine = RunnerEngine(statusItem: statusItem)
+        
+        // Load settings
+        showPercentage = UserDefaults.standard.bool(forKey: "showPercentageInMenuBar")
+        
         setupStatusItem()
-        startRunning()
+        setupPopover()
+        setNotifications()
+        
+        // Start animating
+        engine.start()
+        
+        // Wire Monitor updates to Engine speed & Status Item title
+        monitor.$currentCPU
+            .sink { [weak self] cpuData in
+                guard let self = self else { return }
+                self.engine.updateSpeed(cpuUsage: cpuData.value)
+                
+                if self.showPercentage {
+                    self.statusItem.button?.title = cpuData.description
+                } else {
+                    self.statusItem.button?.title = ""
+                }
+            }
+            .store(in: &cancellables)
+        
+        // Listen to settings toggle notification
+        NotificationCenter.default.publisher(for: NSNotification.Name("ToggleShowPercentage"))
+            .sink { [weak self] _ in
+                guard let self = self else { return }
+                self.showPercentage = UserDefaults.standard.bool(forKey: "showPercentageInMenuBar")
+                if !self.showPercentage {
+                    self.statusItem.button?.title = ""
+                }
+            }
+            .store(in: &cancellables)
     }
 
     func applicationWillTerminate(_ notification: Notification) {
-        stopRunning()
-    }
-
-    private func updateUsageDescription() {
-        statusItem.button?.title = isShowUsage ? usage.description : ""
-    }
-
-    @objc func toggleShowUsage(_ sender: NSMenuItem) {
-        isShowUsage = (sender.state == .off)
-        sender.state = isShowUsage ? .on : .off
-        updateUsageDescription()
-    }
-
-    @objc func openAbout(_ sender: Any?) {
-        NSApp.activate(ignoringOtherApps: true)
-        NSApp.orderFrontStandardAboutPanel(nil)
-    }
-
-    @objc func terminateApp(_ sender: Any?) {
-        NSApp.terminate(nil)
+        engine.stop()
+        monitor.stopMonitoring()
     }
 
     private func setupStatusItem() {
         statusItem.button?.imagePosition = .imageTrailing
-        statusItem.button?.image = frames.first
-        if #available(macOS 10.15, *) {
-            let font = NSFont.monospacedSystemFont(ofSize: 11, weight: .regular)
-            statusItem.button?.font = font
+        statusItem.button?.font = NSFont.systemFont(ofSize: 11, weight: .regular)
+        statusItem.button?.target = self
+        statusItem.button?.action = #selector(togglePopover(_:))
+    }
+    
+    private func setupPopover() {
+        popover.contentSize = NSSize(width: 320, height: 520)
+        popover.behavior = .transient
+        
+        let visualEffect = NSVisualEffectView(frame: NSRect(x: 0, y: 0, width: 320, height: 520))
+        visualEffect.material = .popover
+        visualEffect.blendingMode = .behindWindow
+        visualEffect.state = .active
+        
+        let hostingView = NSHostingView(rootView: DashboardView(monitor: monitor, cleaner: cleaner, engine: engine))
+        hostingView.translatesAutoresizingMaskIntoConstraints = false
+        visualEffect.addSubview(hostingView)
+        
+        NSLayoutConstraint.activate([
+            hostingView.topAnchor.constraint(equalTo: visualEffect.topAnchor),
+            hostingView.leadingAnchor.constraint(equalTo: visualEffect.leadingAnchor),
+            hostingView.trailingAnchor.constraint(equalTo: visualEffect.trailingAnchor),
+            hostingView.bottomAnchor.constraint(equalTo: visualEffect.bottomAnchor),
+        ])
+        
+        popover.contentViewController = NSViewController()
+        popover.contentViewController?.view = visualEffect
+    }
+    
+
+    @objc func togglePopover(_ sender: AnyObject?) {
+        if popover.isShown {
+            closePopover(sender)
         } else {
-            let font = NSFont.monospacedDigitSystemFont(ofSize: 11, weight: .regular)
-            statusItem.button?.font = font
+            showPopover(sender)
         }
-        menu.addItem(withTitle: "Show CPU Usage",
-                     action: #selector(toggleShowUsage(_:)),
-                     keyEquivalent: "")
-        menu.addItem(NSMenuItem.separator())
-        menu.addItem(withTitle: "About Menubar RunCat",
-                     action: #selector(openAbout(_:)),
-                     keyEquivalent: "")
-        menu.addItem(withTitle: "Quit Menubar RunCat",
-                     action: #selector(terminateApp(_:)),
-                     keyEquivalent: "")
-        statusItem.menu = menu
+    }
+
+    private func showPopover(_ sender: AnyObject?) {
+        if let button = statusItem.button {
+            popover.show(relativeTo: button.bounds, of: button, preferredEdge: .minY)
+            popover.contentViewController?.view.window?.makeKey()
+        }
+    }
+
+    private func closePopover(_ sender: AnyObject?) {
+        popover.performClose(sender)
     }
 
     @objc func receiveSleep(_ notification: NSNotification) {
-        stopRunning()
+        engine.stop()
+        monitor.stopMonitoring()
     }
 
     @objc func receiveWakeUp(_ notification: NSNotification) {
-        startRunning()
+        engine.start()
+        monitor.startMonitoring()
     }
 
     private func setNotifications() {
@@ -96,34 +140,5 @@ final class AppDelegate: NSObject, NSApplicationDelegate {
             .addObserver(self, selector: #selector(receiveWakeUp(_:)),
                          name: NSWorkspace.didWakeNotification,
                          object: nil)
-    }
-
-    private func updateUsage() {
-        usage = cpu.currentUsage()
-        interval = 0.2 / max(1.0, min(20.0, self.usage.value / 5.0))
-        updateUsageDescription()
-        runnerTimer?.invalidate()
-        runnerTimer = Timer(timeInterval: self.interval, repeats: true, block: { [weak self] _ in
-            self?.next()
-        })
-        RunLoop.main.add(runnerTimer!, forMode: .common)
-    }
-
-    private func next() {
-        index = (index + 1) % frames.count
-        statusItem.button?.image = frames[index]
-    }
-
-    private func startRunning() {
-        cpuTimer = Timer(timeInterval: 5.0, repeats: true, block: { [weak self] _ in
-            self?.updateUsage()
-        })
-        RunLoop.main.add(cpuTimer!, forMode: .common)
-        cpuTimer?.fire()
-    }
-    
-    private func stopRunning() {
-        runnerTimer?.invalidate()
-        cpuTimer?.invalidate()
     }
 }

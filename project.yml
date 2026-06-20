@@ -1,0 +1,39 @@
+name: Menubar RunCat
+options:
+  bundleIdPrefix: com.kyome
+targets:
+  Menubar RunCat:
+    type: application
+    platform: macOS
+    deploymentTarget: "13.0"
+    sources:
+      - path: Menubar RunCat
+    info:
+      path: Menubar RunCat/Info.plist
+      properties:
+        LSUIElement: true
+        ITSAppUsesNonExemptEncryption: false
+    settings:
+      CODE_SIGN_IDENTITY: "-"
+      DEVELOPMENT_TEAM: ""
+      CODE_SIGN_STYLE: Manual
+      ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+      PRODUCT_BUNDLE_IDENTIFIER: com.kyome.Menubar-RunCat
+      GENERATE_INFOPLIST_FILE: true
+    entitlements:
+      path: Menubar RunCat/Menubar_RunCat.entitlements
+
+  Menubar RunCatTests:
+    type: bundle.unit-test
+    platform: macOS
+    deploymentTarget: "13.0"
+    sources:
+      - path: Menubar RunCatTests
+    dependencies:
+      - target: Menubar RunCat
+    settings:
+      CODE_SIGN_IDENTITY: "-"
+      DEVELOPMENT_TEAM: ""
+      GENERATE_INFOPLIST_FILE: true
+      TEST_HOST: $(BUILT_PRODUCTS_DIR)/Menubar RunCat.app/Contents/MacOS/Menubar RunCat
+      BUNDLE_LOADER: $(TEST_HOST)

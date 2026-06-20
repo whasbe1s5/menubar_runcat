@@ -1,0 +1,89 @@
+{
+  "" : {
+    "diagnostics" : "/Users/whasbe1s/Documents/Projects/menubar_runcat/build/Menubar RunCat.build/Debug/Menubar RunCat.build/Objects-normal/x86_64/Menubar RunCat-primary.dia",
+    "emit-module-dependencies" : "/Users/whasbe1s/Documents/Projects/menubar_runcat/build/Menubar RunCat.build/Debug/Menubar RunCat.build/Objects-normal/x86_64/Menubar RunCat-primary-emit-module.d",
+    "emit-module-diagnostics" : "/Users/whasbe1s/Documents/Projects/menubar_runcat/build/Menubar RunCat.build/Debug/Menubar RunCat.build/Objects-normal/x86_64/Menubar RunCat-primary-emit-module.dia",
+    "pch" : "/Users/whasbe1s/Documents/Projects/menubar_runcat/build/Menubar RunCat.build/Debug/Menubar RunCat.build/Objects-normal/x86_64/Menubar RunCat-primary-Bridging-header.pch",
+    "swift-dependencies" : "/Users/whasbe1s/Documents/Projects/menubar_runcat/build/Menubar RunCat.build/Debug/Menubar RunCat.build/Objects-normal/x86_64/Menubar RunCat-primary.swiftdeps"
+  },
+  "/Users/whasbe1s/Documents/Projects/menubar_runcat/Menubar RunCat/AppDelegate.swift" : {
+    "const-values" : "/Users/whasbe1s/Documents/Projects/menubar_runcat/build/Menubar RunCat.build/Debug/Menubar RunCat.build/Objects-normal/x86_64/AppDelegate.swiftconstvalues",
+    "dependencies" : "/Users/whasbe1s/Documents/Projects/menubar_runcat/build/Menubar RunCat.build/Debug/Menubar RunCat.build/Objects-normal/x86_64/AppDelegate.d",
+    "diagnostics" : "/Users/whasbe1s/Documents/Projects/menubar_runcat/build/Menubar RunCat.build/Debug/Menubar RunCat.build/Objects-normal/x86_64/AppDelegate.dia",
+    "index-unit-output-path" : "/Menubar RunCat.build/Debug/Menubar RunCat.build/Objects-normal/x86_64/AppDelegate.o",
+    "llvm-bc" : "/Users/whasbe1s/Documents/Projects/menubar_runcat/build/Menubar RunCat.build/Debug/Menubar RunCat.build/Objects-normal/x86_64/AppDelegate.bc",
+    "object" : "/Users/whasbe1s/Documents/Projects/menubar_runcat/build/Menubar RunCat.build/Debug/Menubar RunCat.build/Objects-normal/x86_64/AppDelegate.o",
+    "swift-dependencies" : "/Users/whasbe1s/Documents/Projects/menubar_runcat/build/Menubar RunCat.build/Debug/Menubar RunCat.build/Objects-normal/x86_64/AppDelegate.swiftdeps",
+    "swiftmodule" : "/Users/whasbe1s/Documents/Projects/menubar_runcat/build/Menubar RunCat.build/Debug/Menubar RunCat.build/Objects-normal/x86_64/AppDelegate~partial.swiftmodule"
+  },
+  "/Users/whasbe1s/Documents/Projects/menubar_runcat/Menubar RunCat/AppEntry.swift" : {
+    "const-values" : "/Users/whasbe1s/Documents/Projects/menubar_runcat/build/Menubar RunCat.build/Debug/Menubar RunCat.build/Objects-normal/x86_64/AppEntry.swiftconstvalues",
+    "dependencies" : "/Users/whasbe1s/Documents/Projects/menubar_runcat/build/Menubar RunCat.build/Debug/Menubar RunCat.build/Objects-normal/x86_64/AppEntry.d",
+    "diagnostics" : "/Users/whasbe1s/Documents/Projects/menubar_runcat/build/Menubar RunCat.build/Debug/Menubar RunCat.build/Objects-normal/x86_64/AppEntry.dia",
+    "index-unit-output-path" : "/Menubar RunCat.build/Debug/Menubar RunCat.build/Objects-normal/x86_64/AppEntry.o",
+    "llvm-bc" : "/Users/whasbe1s/Documents/Projects/menubar_runcat/build/Menubar RunCat.build/Debug/Menubar RunCat.build/Objects-normal/x86_64/AppEntry.bc",
+    "object" : "/Users/whasbe1s/Documents/Projects/menubar_runcat/build/Menubar RunCat.build/Debug/Menubar RunCat.build/Objects-normal/x86_64/AppEntry.o",
+    "swift-dependencies" : "/Users/whasbe1s/Documents/Projects/menubar_runcat/build/Menubar RunCat.build/Debug/Menubar RunCat.build/Objects-normal/x86_64/AppEntry.swiftdeps",
+    "swiftmodule" : "/Users/whasbe1s/Documents/Projects/menubar_runcat/build/Menubar RunCat.build/Debug/Menubar RunCat.build/Objects-normal/x86_64/AppEntry~partial.swiftmodule"
+  },
+  "/Users/whasbe1s/Documents/Projects/menubar_runcat/Menubar RunCat/CPU.swift" : {
+    "const-values" : "/Users/whasbe1s/Documents/Projects/menubar_runcat/build/Menubar RunCat.build/Debug/Menubar RunCat.build/Objects-normal/x86_64/CPU.swiftconstvalues",
+    "dependencies" : "/Users/whasbe1s/Documents/Projects/menubar_runcat/build/Menubar RunCat.build/Debug/Menubar RunCat.build/Objects-normal/x86_64/CPU.d",
+    "diagnostics" : "/Users/whasbe1s/Documents/Projects/menubar_runcat/build/Menubar RunCat.build/Debug/Menubar RunCat.build/Objects-normal/x86_64/CPU.dia",
+    "index-unit-output-path" : "/Menubar RunCat.build/Debug/Menubar RunCat.build/Objects-normal/x86_64/CPU.o",
+    "llvm-bc" : "/Users/whasbe1s/Documents/Projects/menubar_runcat/build/Menubar RunCat.build/Debug/Menubar RunCat.build/Objects-normal/x86_64/CPU.bc",
+    "object" : "/Users/whasbe1s/Documents/Projects/menubar_runcat/build/Menubar RunCat.build/Debug/Menubar RunCat.build/Objects-normal/x86_64/CPU.o",
+    "swift-dependencies" : "/Users/whasbe1s/Documents/Projects/menubar_runcat/build/Menubar RunCat.build/Debug/Menubar RunCat.build/Objects-normal/x86_64/CPU.swiftdeps",
+    "swiftmodule" : "/Users/whasbe1s/Documents/Projects/menubar_runcat/build/Menubar RunCat.build/Debug/Menubar RunCat.build/Objects-normal/x86_64/CPU~partial.swiftmodule"
+  },
+  "/Users/whasbe1s/Documents/Projects/menubar_runcat/Menubar RunCat/DashboardView.swift" : {
+    "const-values" : "/Users/whasbe1s/Documents/Projects/menubar_runcat/build/Menubar RunCat.build/Debug/Menubar RunCat.build/Objects-normal/x86_64/DashboardView.swiftconstvalues",
+    "dependencies" : "/Users/whasbe1s/Documents/Projects/menubar_runcat/build/Menubar RunCat.build/Debug/Menubar RunCat.build/Objects-normal/x86_64/DashboardView.d",
+    "diagnostics" : "/Users/whasbe1s/Documents/Projects/menubar_runcat/build/Menubar RunCat.build/Debug/Menubar RunCat.build/Objects-normal/x86_64/DashboardView.dia",
+    "index-unit-output-path" : "/Menubar RunCat.build/Debug/Menubar RunCat.build/Objects-normal/x86_64/DashboardView.o",
+    "llvm-bc" : "/Users/whasbe1s/Documents/Projects/menubar_runcat/build/Menubar RunCat.build/Debug/Menubar RunCat.build/Objects-normal/x86_64/DashboardView.bc",
+    "object" : "/Users/whasbe1s/Documents/Projects/menubar_runcat/build/Menubar RunCat.build/Debug/Menubar RunCat.build/Objects-normal/x86_64/DashboardView.o",
+    "swift-dependencies" : "/Users/whasbe1s/Documents/Projects/menubar_runcat/build/Menubar RunCat.build/Debug/Menubar RunCat.build/Objects-normal/x86_64/DashboardView.swiftdeps",
+    "swiftmodule" : "/Users/whasbe1s/Documents/Projects/menubar_runcat/build/Menubar RunCat.build/Debug/Menubar RunCat.build/Objects-normal/x86_64/DashboardView~partial.swiftmodule"
+  },
+  "/Users/whasbe1s/Documents/Projects/menubar_runcat/Menubar RunCat/RunnerEngine.swift" : {
+    "const-values" : "/Users/whasbe1s/Documents/Projects/menubar_runcat/build/Menubar RunCat.build/Debug/Menubar RunCat.build/Objects-normal/x86_64/RunnerEngine.swiftconstvalues",
+    "dependencies" : "/Users/whasbe1s/Documents/Projects/menubar_runcat/build/Menubar RunCat.build/Debug/Menubar RunCat.build/Objects-normal/x86_64/RunnerEngine.d",
+    "diagnostics" : "/Users/whasbe1s/Documents/Projects/menubar_runcat/build/Menubar RunCat.build/Debug/Menubar RunCat.build/Objects-normal/x86_64/RunnerEngine.dia",
+    "index-unit-output-path" : "/Menubar RunCat.build/Debug/Menubar RunCat.build/Objects-normal/x86_64/RunnerEngine.o",
+    "llvm-bc" : "/Users/whasbe1s/Documents/Projects/menubar_runcat/build/Menubar RunCat.build/Debug/Menubar RunCat.build/Objects-normal/x86_64/RunnerEngine.bc",
+    "object" : "/Users/whasbe1s/Documents/Projects/menubar_runcat/build/Menubar RunCat.build/Debug/Menubar RunCat.build/Objects-normal/x86_64/RunnerEngine.o",
+    "swift-dependencies" : "/Users/whasbe1s/Documents/Projects/menubar_runcat/build/Menubar RunCat.build/Debug/Menubar RunCat.build/Objects-normal/x86_64/RunnerEngine.swiftdeps",
+    "swiftmodule" : "/Users/whasbe1s/Documents/Projects/menubar_runcat/build/Menubar RunCat.build/Debug/Menubar RunCat.build/Objects-normal/x86_64/RunnerEngine~partial.swiftmodule"
+  },
+  "/Users/whasbe1s/Documents/Projects/menubar_runcat/Menubar RunCat/SystemCleaner.swift" : {
+    "const-values" : "/Users/whasbe1s/Documents/Projects/menubar_runcat/build/Menubar RunCat.build/Debug/Menubar RunCat.build/Objects-normal/x86_64/SystemCleaner.swiftconstvalues",
+    "dependencies" : "/Users/whasbe1s/Documents/Projects/menubar_runcat/build/Menubar RunCat.build/Debug/Menubar RunCat.build/Objects-normal/x86_64/SystemCleaner.d",
+    "diagnostics" : "/Users/whasbe1s/Documents/Projects/menubar_runcat/build/Menubar RunCat.build/Debug/Menubar RunCat.build/Objects-normal/x86_64/SystemCleaner.dia",
+    "index-unit-output-path" : "/Menubar RunCat.build/Debug/Menubar RunCat.build/Objects-normal/x86_64/SystemCleaner.o",
+    "llvm-bc" : "/Users/whasbe1s/Documents/Projects/menubar_runcat/build/Menubar RunCat.build/Debug/Menubar RunCat.build/Objects-normal/x86_64/SystemCleaner.bc",
+    "object" : "/Users/whasbe1s/Documents/Projects/menubar_runcat/build/Menubar RunCat.build/Debug/Menubar RunCat.build/Objects-normal/x86_64/SystemCleaner.o",
+    "swift-dependencies" : "/Users/whasbe1s/Documents/Projects/menubar_runcat/build/Menubar RunCat.build/Debug/Menubar RunCat.build/Objects-normal/x86_64/SystemCleaner.swiftdeps",
+    "swiftmodule" : "/Users/whasbe1s/Documents/Projects/menubar_runcat/build/Menubar RunCat.build/Debug/Menubar RunCat.build/Objects-normal/x86_64/SystemCleaner~partial.swiftmodule"
+  },
+  "/Users/whasbe1s/Documents/Projects/menubar_runcat/Menubar RunCat/SystemMonitor.swift" : {
+    "const-values" : "/Users/whasbe1s/Documents/Projects/menubar_runcat/build/Menubar RunCat.build/Debug/Menubar RunCat.build/Objects-normal/x86_64/SystemMonitor.swiftconstvalues",
+    "dependencies" : "/Users/whasbe1s/Documents/Projects/menubar_runcat/build/Menubar RunCat.build/Debug/Menubar RunCat.build/Objects-normal/x86_64/SystemMonitor.d",
+    "diagnostics" : "/Users/whasbe1s/Documents/Projects/menubar_runcat/build/Menubar RunCat.build/Debug/Menubar RunCat.build/Objects-normal/x86_64/SystemMonitor.dia",
+    "index-unit-output-path" : "/Menubar RunCat.build/Debug/Menubar RunCat.build/Objects-normal/x86_64/SystemMonitor.o",
+    "llvm-bc" : "/Users/whasbe1s/Documents/Projects/menubar_runcat/build/Menubar RunCat.build/Debug/Menubar RunCat.build/Objects-normal/x86_64/SystemMonitor.bc",
+    "object" : "/Users/whasbe1s/Documents/Projects/menubar_runcat/build/Menubar RunCat.build/Debug/Menubar RunCat.build/Objects-normal/x86_64/SystemMonitor.o",
+    "swift-dependencies" : "/Users/whasbe1s/Documents/Projects/menubar_runcat/build/Menubar RunCat.build/Debug/Menubar RunCat.build/Objects-normal/x86_64/SystemMonitor.swiftdeps",
+    "swiftmodule" : "/Users/whasbe1s/Documents/Projects/menubar_runcat/build/Menubar RunCat.build/Debug/Menubar RunCat.build/Objects-normal/x86_64/SystemMonitor~partial.swiftmodule"
+  },
+  "/Users/whasbe1s/Documents/Projects/menubar_runcat/build/Menubar RunCat.build/Debug/Menubar RunCat.build/DerivedSources/GeneratedAssetSymbols.swift" : {
+    "const-values" : "/Users/whasbe1s/Documents/Projects/menubar_runcat/build/Menubar RunCat.build/Debug/Menubar RunCat.build/Objects-normal/x86_64/GeneratedAssetSymbols.swiftconstvalues",
+    "dependencies" : "/Users/whasbe1s/Documents/Projects/menubar_runcat/build/Menubar RunCat.build/Debug/Menubar RunCat.build/Objects-normal/x86_64/GeneratedAssetSymbols.d",
+    "diagnostics" : "/Users/whasbe1s/Documents/Projects/menubar_runcat/build/Menubar RunCat.build/Debug/Menubar RunCat.build/Objects-normal/x86_64/GeneratedAssetSymbols.dia",
+    "index-unit-output-path" : "/Menubar RunCat.build/Debug/Menubar RunCat.build/Objects-normal/x86_64/GeneratedAssetSymbols.o",
+    "llvm-bc" : "/Users/whasbe1s/Documents/Projects/menubar_runcat/build/Menubar RunCat.build/Debug/Menubar RunCat.build/Objects-normal/x86_64/GeneratedAssetSymbols.bc",
+    "object" : "/Users/whasbe1s/Documents/Projects/menubar_runcat/build/Menubar RunCat.build/Debug/Menubar RunCat.build/Objects-normal/x86_64/GeneratedAssetSymbols.o",
+    "swift-dependencies" : "/Users/whasbe1s/Documents/Projects/menubar_runcat/build/Menubar RunCat.build/Debug/Menubar RunCat.build/Objects-normal/x86_64/GeneratedAssetSymbols.swiftdeps",
+    "swiftmodule" : "/Users/whasbe1s/Documents/Projects/menubar_runcat/build/Menubar RunCat.build/Debug/Menubar RunCat.build/Objects-normal/x86_64/GeneratedAssetSymbols~partial.swiftmodule"
+  }
+}

@@ -40,6 +40,7 @@ final class CPU {
         loadPrevious = load
         
         let totalTicks = sysDiff + userDiff + idleDiff + niceDiff
+        guard totalTicks > 0 else { return CPU.default }
         let sys  = 100.0 * sysDiff / totalTicks
         let user = 100.0 * userDiff / totalTicks
 
